@@ -1,0 +1,137 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 60px auto;
+}
+.container {
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+.yoga-text,
+.weather-text,
+.yogurt-text {
+  border: solid 1px white;
+  font-size: 12px;
+  margin-left: 47px;
+  background-color: #fff;
+  text-align: center;
+}
+.yoga-btn {
+  text-align: center;
+}
+
+.weather-app {
+  font-size: 14px;
+  text-align: center;
+  background-color: #fff;
+}
+.first-sentence {
+  font-size: 38px;
+  text-align: center;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .yoga-text,
+  .weather-text,
+  .yogurt-text {
+    width: 90%;
+    padding: 1px;
+    margin-left: 5px;
+    font-size: 9px;
+  }
+  .contact,
+  .email-link {
+    font-size: 18px;
+  }
+  .about-me{
+    font-size: 34px;
+    padding: 7px;
+  }
+}
